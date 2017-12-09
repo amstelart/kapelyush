@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Kapelyush</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/manifest.json">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <a href="index.html">
+          <img src="img/top-logo.png" alt="Kapelyush">
+        </a>
+      </header>
+      <nav id="main-nav" class="main-nav" role="navigation">
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="" class="main-nav__link">
+                  Каталог
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Каталог
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Юбки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Брюки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Верхняя одежда
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Платья
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Спортивные костюмы
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  О нас
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Доставка
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Оплата
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Заказать звонок
+                </a>
+              </li>
+            </ul>
+          </nav>
+      <section class="section section--main section--slider">
+        <div class="section__container">
+          <div class="owl-carousel slider" id="main-slider">
+            <img src="img/slider-demo-image-01.jpg" alt="">
+            <img src="img/slider-demo-image-01.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="section section--main">
+        <div class="section__container">
+          <div class="section__header">
+            <h2 class="section__title">Новинки</h2>
+          </div>
+          <div class="owl-carousel content-carousel">
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--main">
+        <div class="section__container">
+          <div class="banners">
+            <div class="banners__item">
+              <a href="#" class="banners__link">
+                <img class="banners__image" src="img/banner-demo-01.jpg" alt="">
+                <span class="banners__caption">Тренд: темные платья</span>
+              </a>
+            </div>
+            <div class="banners__item">
+              <a href="#" class="banners__link">
+                <img class="banners__image" src="img/banner-demo-02.jpg" alt="">
+                <span class="banners__caption">Популярное в этом сезоне: темные юбки</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--main">
+        <div class="section__container">
+          <div class="section__header">
+            <h2 class="section__title">Популярные товары</h2>
+          </div>
+          <div class="owl-carousel content-carousel">
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+            <div class="product-card">
+              <a href="#" class="product-card__link">
+                <div class="product-card__image">
+                  <img src="img/product-image-01.jpg" alt="">
+                </div>
+                <div class="product-card__name">Платье «Белла»</div>
+                <div class="product-card__caption">
+                  Вечернее платье с дукоративными пуговицами
+                </div>
+                <div class="product-card__cost">3390 Р</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--main section--advantage">
+        <div class="section__container">
+          <div class="advantage">
+            <div class="advantage__item">
+              <div class="advantage__icon">
+                <svg class="icon" width="30" height="35">
+                  <use xlink:href="img/sprite-svg.svg#icon-adv-01"/>
+                </svg>
+              </div>
+              <div class="advantage__text">Модный интернет магазин</div>
+            </div>
+            <div class="advantage__item">
+              <div class="advantage__icon">
+                <svg class="icon" width="30" height="30">
+                  <use xlink:href="img/sprite-svg.svg#icon-adv-02"/>
+                </svg>
+              </div>
+              <div class="advantage__text">Гибкая система скидок</div>
+            </div>
+            <div class="advantage__item">
+              <div class="advantage__icon">
+                <svg class="icon" width="32" height="33">
+                  <use xlink:href="img/sprite-svg.svg#icon-adv-03"/>
+                </svg>
+              </div>
+              <div class="advantage__text">Оптимальные цены</div>
+            </div>
+            <div class="advantage__item">
+              <div class="advantage__icon">
+                <svg class="icon" width="39" height="29">
+                  <use xlink:href="img/sprite-svg.svg#icon-adv-04"/>
+                </svg>
+              </div>
+              <div class="advantage__text">Удобная система онлайн оплаты</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <main role="main">
+        <h1>NTH start project</h1>
+        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+      </main> -->
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__top">
+          <div class="page__container">
+            <div class="page-footer__part page-footer__part--nav">
+              <a href="index.html" class="logo">
+                <img src="img/bottom-logo.png" alt="Kapelyush">
+              </a>
+              <ul class="footer-nav">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Главная</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Каталог</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">О нас</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Доставка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Оплата</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Заказать звонок</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Обратная связь</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__part page-footer__part--info">
+              <div class="social">
+                <a class="social__item" href="#">
+                  <svg class="icon" width="26" height="26">
+                    <use xlink:href="img/sprite-svg.svg#icon-whatsapp"/>
+                  </svg>
+                </a>
+                <a class="social__item" href="#">
+                  <svg class="icon" width="26" height="26">
+                    <use xlink:href="img/sprite-svg.svg#icon-instagram"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="footer-info">
+                <div class="footer-info__item"><span>+7 900 000 00 00</span></div>
+                <div class="footer-info__item"><a href="#">Политика конфиденциальности</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="page__container">
+            <p class="copyright">Разработка - <a href="http://www.2showbiz.ru/">Showbiz Studio</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
