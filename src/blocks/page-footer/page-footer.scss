@@ -5,4 +5,44 @@
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+
+  &__top {
+    background: #000;
+    padding: 30px 0;
+    color: #fff;
+    a {
+      color: darken(#fff, 45%);
+
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: right;
+    a {
+      color: #000;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: lighten(#000, 50%);
+      }
+    }
+  }
+
+  &__part {
+    display: flex;
+    &--nav {
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &--info {
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
 }

@@ -1,0 +1,30 @@
+// В этом файле должны быть стили для БЭМ-блока product-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+  }
+  &__image {
+    margin-bottom: 10px;
+  }
+  &__name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  &__caption {
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  &__cost {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

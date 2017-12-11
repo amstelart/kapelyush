@@ -235,3 +235,14 @@ pre {
   overflow-x: auto;
   tab-size: 2;
 }
+
+a {
+  color: #004fd3;
+  transition: all ease-out 0.3s;
+
+  &:hover,
+  &:focus {
+    color: lighten(#004fd3, 15%);
+    text-decoration: none;
+  }
+}

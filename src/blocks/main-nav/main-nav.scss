@@ -51,6 +51,7 @@ $transition-time:             0.3s !default;
     @media (min-width: $menu-desktop-width) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -70,6 +71,8 @@ $transition-time:             0.3s !default;
     padding: 0.5em;
     text-decoration: none;
     background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
 
     &:hover,
     &:focus {

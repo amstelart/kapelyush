@@ -33,6 +33,16 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+  &__container {
+    @include container;
+  }
+  &__nav {
+    #{$block-name}__container {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #b8b8b8;
+    }
+  }
 }
 
 *,
