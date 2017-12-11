@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Kapelyush</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/manifest.json">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <a class="logo logo--top" href="index.html">
+          <img src="img/top-logo.png" alt="Kapelyush">
+        </a>
+      </header>
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="" class="main-nav__link">
+              Каталог
+            </a>
+            <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+              <ul class="main-nav__list  main-nav__list--lvl-2">
+                <li class="main-nav__item  main-nav__item--lvl-2">
+                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                    Юбки
+                  </a>
+                </li>
+                <li class="main-nav__item  main-nav__item--lvl-2">
+                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                    Брюки
+                  </a>
+                </li>
+                <li class="main-nav__item  main-nav__item--lvl-2">
+                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                    Верхняя одежда
+                  </a>
+                </li>
+                <li class="main-nav__item  main-nav__item--lvl-2">
+                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                    Платья
+                  </a>
+                </li>
+                <li class="main-nav__item  main-nav__item--lvl-2">
+                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                    Спортивные костюмы
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav__item">
+            <a href="page-about-us.html" class="main-nav__link">
+              О нас
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="page-delivery.html" class="main-nav__link">
+              Доставка
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="page-payment.html" class="main-nav__link">
+              Оплата
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Заказать звонок
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="section section-page">
+        <div class="section__container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">О нас</a></li>
+          </ul>
+          <div class="section__header">
+            <h1 class="section__title">О нас</h1>
+          </div>
+          <div class="section__image-in">
+            <img src="img/section-image.jpg" alt="">
+          </div>
+          <main role="main">
+            <h2 class="blocks-library__item-title">Текст, теги</h2>
+            <p>Реализуется блоком <code>typo</code>, все стили которого являются глобальными.</p>
+            <p>Параграфы, расстояние между ними. <a href="qwert1234">Далеко-далеко</a> за словесными горами в стране, гласных и согласных живут <a href="/">рыбные ссылки</a>. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <h1>Заголовок 1</h1>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <h2>Заголовок 2</h2>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <h3>Заголовок 3</h3>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <h4>Заголовок 4</h4>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <h5>Заголовок 5</h5>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <h6>Заголовок 6</h6>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <ul>
+              <li>Пункт 1
+                <ul>
+                  <li>Подпункт 1</li>
+                  <li>Подпункт 2</li>
+                </ul>
+              </li>
+              <li>Пункт 2</li>
+              <li>Пункт 3</li>
+            </ul>
+            <ol>
+              <li>Пункт 1
+                <ol>
+                  <li>Подпункт 1</li>
+                  <li>Подпункт 2</li>
+                </ol>
+              </li>
+              <li>Пункт 2</li>
+              <li>Пункт 3</li>
+            </ol>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <dl>
+              <dt>Определяемая сущность 1</dt>
+              <dd>Некое, возможно, относительно длинное определение упомянутой сущности. Скорее всего, многострочное.</dd>
+              <dt>Определяемая сущность 2</dt>
+              <dd>Некое, возможно, относительно длинное определение. Скорее всего, длинное, весьма многострочное и многословное.</dd>
+              <dd>Некое, возможно, относительно длинное определение упомянутой сущности.</dd>
+            </dl>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <hr>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила, дал приставка составитель решила подпоясал запятых сих ручеек которой власти до, над жизни возвращайся силуэт что не курсивных.</p>
+            <table>
+              <tbody><tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td><a href="">ссылка</a></td>
+              </tr>
+              <tr>
+                <td><code>&lt;strong&gt;</code></td>
+                <td><strong>действительно значимый текст</strong></td>
+              </tr>
+              <tr>
+                <td><code>&lt;b&gt;</code></td>
+                <td><b>просто выделенный текст, лид</b></td>
+              </tr>
+              <tr>
+                <td><code>&lt;i&gt;</code></td>
+                <td><i>иностранное слово или термин</i></td>
+              </tr>
+              <tr>
+                <td><code>&lt;em&gt;</code></td>
+                <td><em>эмфатическое ударение</em></td>
+              </tr>
+              <tr>
+                <td><code>&lt;s&gt;</code></td>
+                <td><s>информация, утратившая актуальность</s></td>
+              </tr>
+              <tr>
+                <td><code>&lt;del&gt;</code></td>
+                <td><del>изменение, внесённое в документ (удаление)</del></td>
+              </tr>
+              <tr>
+                <td><code>&lt;ins&gt;</code></td>
+                <td><ins>изменение, внесённое в документ (добавление)</ins></td>
+              </tr>
+              <tr>
+                <td><code>&lt;mark&gt;</code></td>
+                <td><mark>акцент маркерным выделением</mark></td>
+              </tr>
+              <tr>
+                <td><code>&lt;small&gt;</code></td>
+                <td><small>малозначимый текст</small></td>
+              </tr>
+              <tr>
+                <td><code>&lt;abbr&gt;</code></td>
+                <td><abbr title="Аббревиатура">АББРЕВИАТУРА</abbr></td>
+              </tr>
+              <tr>
+                <td><code>&lt;kbd&gt;</code></td>
+                <td><kbd>Ctrl + C</kbd></td>
+              </tr>
+              <tr>
+                <td><code>&lt;sup&gt;</code></td>
+                <td>2<sup>3</sup></td>
+              </tr>
+              <tr>
+                <td><code>&lt;sub&gt;</code></td>
+                <td>H<sub>2</sub>O</td>
+              </tr>
+              <tr>
+                <td><code>&lt;code&gt;</code></td>
+                <td><code>code</code></td>
+              </tr>
+            </tbody></table>
+            <address>
+              <strong>Имя Фамилия</strong>
+              <br>
+              г. Лондон, ул. Виндзорский сад, д. 32 (спросить мистера Имя) <br>
+              <a href="mailto:user@mail.com">user@mail.com</a>
+            </address>
+            <div class="blocks-library__code-wrapper">
+              <span class="blocks-library__code-show-trigger" title="Показать код"><i class="blocks-library__code-icon"></i></span>
+              <div class="blocks-library__code">
+                <pre class="code">            <code>&lt;address&gt;</code>
+                  <code>  &lt;strong&gt;Имя Фамилия&lt;/strong&gt;</code>
+                  <code>  &lt;br&gt;</code>
+                  <code>  г. Лондон, ул. Виндзорский сад, д. 32 (спросить мистера Имя) &lt;br&gt;</code>
+                  <code>  &lt;a href="mailto:user@mail.com"&gt;user@mail.com&lt;/a&gt;</code>
+                  <code>&lt;/address&gt;</code>
+                </pre>
+              </div>
+            </div>
+            <blockquote>
+              <p>Цитата. Далеко-далеко за словесными горами в стране. Далеко-далеко за словесными горами в стране.</p>
+              <footer>Emmet</footer>
+            </blockquote>
+            <div class="blocks-library__code-wrapper">
+              <span class="blocks-library__code-show-trigger" title="Показать код"><i class="blocks-library__code-icon"></i></span>
+              <div class="blocks-library__code">
+                <pre class="code">            <code>&lt;blockquote&gt;</code>
+                  <code>  &lt;p&gt;Цитата. Далеко-далеко за словесными горами в стране. Далеко-далеко за словесными горами в стране.&lt;/p&gt;</code>
+                  <code>  &lt;footer&gt;Emmet&lt;/footer&gt;</code>
+                  <code>&lt;/blockquote&gt;</code>
+                </pre>
+              </div>
+            </div>
+            <blockquote>
+              <p>Цитата. Далеко-далеко за словесными горами в стране. Далеко-далеко за словесными горами в стране.</p>
+              <footer><cite>Emmet</cite></footer>
+            </blockquote>
+            <div class="blocks-library__sub-item" id="text-pre">
+              <h2 class="blocks-library__sub-item-title">Форматированный текст</h2>
+              <p>Смотри так же <a href="#code">БЭМ-блок для кода</a>.</p>
+              <pre>// Блочный код с тегом переноса строки <br>// Вторая строка, написанная без символа переноса строки</pre>
+              <div class="blocks-library__code-wrapper">
+                <span class="blocks-library__code-show-trigger" title="Показать код"><i class="blocks-library__code-icon"></i></span>
+                <div class="blocks-library__code">
+                  <pre class="code">              <code>&lt;pre&gt;// Блочный код с тегом переноса строки &lt;br&gt;// Вторая строка, написанная без символа переноса строки&lt;/pre&gt;</code>
+                  </pre>
+                </div>
+              </div>
+              <pre>// Блочный код с символом переноса строки
+              // Вторая строка</pre>
+              <div class="blocks-library__code-wrapper">
+                <span class="blocks-library__code-show-trigger" title="Показать код"><i class="blocks-library__code-icon"></i></span>
+                <div class="blocks-library__code">
+                  <pre class="code">              <code>&lt;pre&gt;// Блочный код с символом переноса строки</code>
+                    <code>// Вторая строка&lt;/pre&gt;</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+          </main>
+        </div>
+      </section>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__top">
+          <div class="page__container">
+            <div class="page-footer__part page-footer__part--nav">
+              <a href="index.html" class="logo logo--bottom">
+                <img src="img/bottom-logo.png" alt="Kapelyush">
+              </a>
+              <ul class="footer-nav">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Главная</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Каталог</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">О нас</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Доставка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Оплата</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Заказать звонок</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Обратная связь</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__part page-footer__part--info">
+              <div class="social">
+                <a class="social__item" href="#">
+                  <svg class="icon" width="26" height="26">
+                    <use xlink:href="img/sprite-svg.svg#icon-whatsapp"/>
+                  </svg>
+                </a>
+                <a class="social__item" href="#">
+                  <svg class="icon" width="26" height="26">
+                    <use xlink:href="img/sprite-svg.svg#icon-instagram"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="footer-info">
+                <div class="footer-info__item"><span>+7 900 000 00 00</span></div>
+                <div class="footer-info__item"><a href="#">Политика конфиденциальности</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="page__container">
+            <p class="copyright">Разработка - <a href="http://www.2showbiz.ru/">Showbiz Studio</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
