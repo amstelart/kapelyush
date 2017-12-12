@@ -18,6 +18,15 @@
         color: #fff;
       }
     }
+
+    .footer-info {
+      margin-left: 20px;
+      &__item {
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+      }
+    }
   }
 
   &__bottom {

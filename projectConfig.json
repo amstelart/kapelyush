@@ -65,7 +65,13 @@
     "footer-info": [],
     "advantage": [],
     "banners": [],
-    "product-card": []
+    "product-card": [],
+    "catalog": [],
+    "basket": [],
+    "field-box": [],
+    "field-promo": [],
+    "buy": [],
+    "product": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

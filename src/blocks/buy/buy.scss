@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока buy, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.buy {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .row-field {
+    display: flex;
+  }
+
+  .col-field__inputs {
+    width: 265px;
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+  .col-field__delivery {
+    flex-basis: 100%;
+    margin-bottom: 9px;
+  }
+
+}

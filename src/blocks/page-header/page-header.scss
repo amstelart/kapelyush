@@ -7,7 +7,31 @@
   $block-name:                &; // #{$block-name}__element
   padding-top: 50px;
   padding-bottom: 30px;
-  display: flex;
-  justify-content: center;
+
+  .page__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .header-search {
+    position: absolute;
+    left: 15px;
+    top: 0;
+  }
+
+  .header-el {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
 
 }

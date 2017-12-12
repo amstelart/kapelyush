@@ -28,4 +28,10 @@
     }
   }
 
+  &--page {
+    #{$block-name}__container {
+      border-top: 1px solid #ccc;
+    }
+  }
+
 }
