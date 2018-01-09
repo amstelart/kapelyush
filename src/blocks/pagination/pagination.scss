@@ -21,13 +21,14 @@ $border-color:                hsl(0, 0%, 60%) !default;
     display: block;
     padding: 0.5em;
     min-width: 2.5em;
-    border: 1px solid $border-color;
+    border: 1px solid transparent;
+    border-radius: 50%;
     text-decoration: none;
     text-align: center;
     color: $text-color;
 
     & + & {
-      border-left: 0;
+      margin-left: 20px;
     }
 
     &:hover,
@@ -45,7 +46,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
     }
 
     &--active {
-      background-color: $gray-lightest;
+      border-color: $border-color;
     }
   }
 }

@@ -19,8 +19,39 @@
     @include make-col(4);
   }
 
-  &__description {
+  &__name {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 0;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__caption {
+    margin-top: 0;
+  }
+  &__cost {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+  }
+  &__color {
+    margin-bottom: 15px;
+  }
+  &__size {
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-bottom: 15px;
+    }
+  }
 
+  &__description {
+    line-height: 1.6;;
+  }
+
+  &__description-part {
+    margin-bottom: 25px;
   }
 
 }

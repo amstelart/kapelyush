@@ -1,0 +1,75 @@
+// В этом файле должны быть стили для БЭМ-блока cost-filter, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.cost-filter {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__val-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  &__val {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-left: 30px;
+    position: relative;
+    &--lower {
+      &:before {
+        content: "от";
+        position: absolute;
+        left: -25px;
+        top: 5px;
+      }
+    }
+    &--upper {
+      &:before {
+        content: "до";
+        position: absolute;
+        left: -25px;
+        top: 5px;
+      }
+    }
+  }
+
+  .nouislider {
+    // margin-left: 10px;
+    // margin-right: 10px;
+  }
+
+  .noUi-target {
+    background: #ccc;
+    height: 1px;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  .noUi-connect {
+    background: #000;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .noUi-handle {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: #000;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .noUi-horizontal .noUi-handle {
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: -5px;
+  }
+
+}

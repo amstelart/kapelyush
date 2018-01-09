@@ -1,9 +1,14 @@
-// В этом файле должны быть стили для БЭМ-блока basket, его элементов,
+// В этом файле должны быть стили для БЭМ-блока right-page-spacer, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.basket {
+.right-page-spacer {
 
   $block-name:                &; // #{$block-name}__element
+
+
+  @media (min-width: $screen-xl) {
+    padding-right: 270px;
+  }
 
 }

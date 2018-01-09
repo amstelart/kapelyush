@@ -67,6 +67,14 @@ $border-radius:               3px !default;
     width: 100%;
   }
 
+  &--show-more {
+    border-color: #ff830a;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+    padding: 1em 2em;
+    min-width: 265px;
+  }
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;

@@ -6,24 +6,27 @@
 
   $block-name:                &; // #{$block-name}__element
   padding-top: 50px;
-  padding-bottom: 30px;
 
-  .page__container {
+  &__content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: relative;
+    padding-bottom: 30px;
+  }
+
+  .page__container {
   }
 
   .header-search {
     position: absolute;
-    left: 15px;
+    left: 0;
     top: 0;
   }
 
   .header-el {
     position: absolute;
-    right: 15px;
+    right: 0;
     top: 0;
     display: flex;
     align-items: center;

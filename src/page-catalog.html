@@ -26,15 +26,144 @@
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Вархняя одежда</a></li>
           </ul>
 
-          <div class="section__header">
-            <h1 class="section__title">Верхняя одежда</h1>
+          <div class="catalog-header">
+            <h1 class="catalog-header__title">Верхняя одежда</h1>
+            <p class="catalog-header__amount-products">2 130 товаров</p>
+
+            <div class="sort-filter">
+              <form action="">
+                <label class="field-select">
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" id="" name="">
+                      <option>Цена +</option>
+                      <option>Цена -</option>
+                    </select>
+                  </div>
+                </label>
+              </form>
+            </div>
+
           </div>
 
           <div class="catalog">
-            <div class="catalog__filters">
+
+            <div class="catalog__sidebar">
+
+              <form action="" class="filters">
+
+                <div class="filterblock filterblock--dropdown">
+                  <div class="filterblock__title">
+                    <svg class="icon" width="15" height="7">
+                      <use xlink:href="img/sprite-svg.svg#icon-arrow"></use>
+                    </svg>
+                    Размер
+                    <a class="filterblock__reset">Очистить</a>
+                  </div>
+                  <div class="filterblock__selectors">
+                    <ul class="selectors-list">
+                      <li>
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="">
+                            <span class="field-checkbox__name-text">L</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="">
+                            <span class="field-checkbox__name-text">XL</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="">
+                            <span class="field-checkbox__name-text">XXL</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filterblock filterblock--dropdown">
+                  <div class="filterblock__title">
+                    <svg class="icon" width="15" height="7">
+                      <use xlink:href="img/sprite-svg.svg#icon-arrow"></use>
+                    </svg>
+                    Цвет
+                    <a class="filterblock__reset">Очистить</a>
+                  </div>
+                  <div class="filterblock__selectors">
+                    <ul class="selectors-list">
+                      <li>
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="">
+                            <span class="field-checkbox__name-text">Синий</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="">
+                            <span class="field-checkbox__name-text">Красный</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="">
+                            <span class="field-checkbox__name-text">Жёлтый</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="">
+                            <span class="field-checkbox__name-text">Белый</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="">
+                            <span class="field-checkbox__name-text">Коричневый</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="filterblock">
+                  <div class="filterblock__title">
+                    Цена
+                  </div>
+
+                  <div class="cost-filter">
+                    <div class="cost-filter__val-group">
+                      <span class="cost-filter__val cost-filter__val--lower" id="lower-value"></span>
+                      <span class="cost-filter__val cost-filter__val--upper" id="upper-value"></span>
+                    </div>
+                    <div class="nouislider" id="sort-slider"></div>
+                  </div>
+
+
+                </div>
+
+              </form>
 
             </div>
-            <div class="catalog__shopwindow">
+
+            <div class="catalog__main">
 
               <div class="product-card">
                 <a href="page-product.html" class="product-card__link">
@@ -157,12 +286,16 @@
                 <button class="btn btn--show-more">Показать еще</button>
               </div>
 
-              <div class="pagination">
-                <a href="" class="pagination__item">1</a>
-                <a href="" class="pagination__item  pagination__item--active">2</a>
-                <a href="" class="pagination__item">3</a>
-                <a href="" class="pagination__item">4</a>
-                <a href="" class="pagination__item">5</a>
+              <div class="catalog__pagination">
+                <div class="pagination">
+                  <a href="" class="pagination__item"><</a>
+                  <a href="" class="pagination__item">1</a>
+                  <a href="" class="pagination__item  pagination__item--active">2</a>
+                  <a href="" class="pagination__item">3</a>
+                  <a href="" class="pagination__item">4</a>
+                  <a href="" class="pagination__item">5</a>
+                  <a href="" class="pagination__item">></a>
+                </div>
               </div>
 
             </div>

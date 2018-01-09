@@ -1,9 +1,18 @@
-// В этом файле должны быть стили для БЭМ-блока basket, его элементов,
+// В этом файле должны быть стили для БЭМ-блока sort-filter, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.basket {
+.sort-filter {
 
   $block-name:                &; // #{$block-name}__element
+
+  position: absolute;
+  right: 0;
+  top: 10px;
+  min-width: 155px;
+
+  // form {
+  //   width: 100%;
+  // }
 
 }

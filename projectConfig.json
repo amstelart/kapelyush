@@ -71,7 +71,19 @@
     "field-box": [],
     "field-promo": [],
     "buy": [],
-    "product": []
+    "product": [],
+    "filterblock": [],
+    "selectors-list": [],
+    "right-page-spacer": [],
+    "basket-product": [],
+    "prod-name": [],
+    "description": [],
+    "quantity": [],
+    "price": [],
+    "catalog-header": [],
+    "sort-filter": [],
+    "cost-filter": [],
+    "incr": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
