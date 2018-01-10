@@ -42,29 +42,39 @@ $(document).ready(function() {
   });
 
   // noUiSlider
-  var handlesSlider = document.getElementById('sort-slider');
+  // var handlesSlider = document.getElementById('sort-slider');
+  //
+  // noUiSlider.create(handlesSlider, {
+  //   tooltips: false,
+  //   start: [700, 5590],
+  //   connect: true,
+  //   range: {
+  //     'min': [700],
+  //     'max': [5590]
+  //   }
+  // });
+  //
+  // var nodes = [
+  // 	document.getElementById('lower-value'),
+  // 	document.getElementById('upper-value')
+  // ];
+  //
+  // handlesSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+  // 	nodes[handle].innerHTML = values[handle];
+  // });
 
-  noUiSlider.create(handlesSlider, {
-    tooltips: false,
-    start: [700, 5590],
-    connect: true,
-    range: {
-      'min': [700],
-      'max': [5590]
-    }
+  // Product slider
+  $('#vertical').lightSlider({
+    gallery:true,
+    item:1,
+    vertical:true,
+    verticalHeight:295,
+    currentPagerPosition:'right',
+    vThumbWidth:150,
+    thumbItem:4,
+    thumbMargin:14,
+    slideMargin:0
   });
-
-  var nodes = [
-  	document.getElementById('lower-value'), // 0
-  	document.getElementById('upper-value')  // 1
-  ];
-
-  // Display the slider value and how far the handle moved
-  // from the left edge of the slider.
-  handlesSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
-  	nodes[handle].innerHTML = values[handle];
-  });
-
 
 
 });
