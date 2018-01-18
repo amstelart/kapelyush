@@ -3,35 +3,37 @@
 <head>
   <meta charset="utf-8">
   <title>Kapelyush</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet" media="screen">
-  <script>
-    // Маркер работающего javascript
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    document.addEventListener('DOMContentLoaded', function(){
-      if (window.isMobile !== undefined) {
-        // console.log(isMobile);
-        if(isMobile.any) {
-          var rootClasses = ' is-mobile';
-          for (key in isMobile) {
-            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
-            if(typeof isMobile[key] === 'object' && key !== 'other') {
-              for (type in isMobile[key]) {
-                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
-              }
+  <meta name="description" content=""> <!--DEV Такой комментарий не попадет в собранный HTML
+<meta name="viewport" content="width=1000">
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet" media="screen">
+<script>
+  // Маркер работающего javascript
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  document.addEventListener('DOMContentLoaded', function(){
+    if (window.isMobile !== undefined) {
+      // console.log(isMobile);
+      if(isMobile.any) {
+        var rootClasses = ' is-mobile';
+        for (key in isMobile) {
+          if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+          if(typeof isMobile[key] === 'object' && key !== 'other') {
+            for (type in isMobile[key]) {
+              if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
             }
           }
-          document.documentElement.className += rootClasses;
         }
+        document.documentElement.className += rootClasses;
       }
-      else {
-        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
-      }
-    });
-  </script>
+    }
+    else {
+      console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+    }
+  });
+</script>
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -47,85 +49,99 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page__container">
-          <div class="header-search">
-            <svg class="icon" width="30" height="35">
-              <use xlink:href="img/sprite-svg.svg#icon-search"/>
-            </svg>
-          </div>
-          <a class="logo logo--top" href="index.html">
-            <img src="img/top-logo.png" alt="Kapelyush">
-          </a>
-          <div class="header-el">
-            <a href="#">Личный кабинет</a>
-            <div class="header-backet">
-              <a href="page-basket.html">
+          <div class="page-header__content">
+            <!-- <div class="header-search">
+              <form class="search__form">
+                <input type="search" name="search" id="search" class="search__input" placeholder="Search">
+                <label for="search" class="search__label">
+                  <svg class="icon" width="30" height="35">
+                    <use xlink:href="img/sprite-svg.svg#icon-search"></use>
+                  </svg>
+                </label>
+              </form>
+            </div> -->
+            <div class="header-search search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="Введите поисковый запрос">
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+            </div>
+            <a class="logo logo--top" href="index.html">
+              <img src="img/top-logo.png" alt="Kapelyush">
+            </a>
+            <div class="header-el">
+              <a class="header-login" href="#">Личный кабинет</a>
+              <a class="header-backet header-backet--completed" href="page-basket.html">
                 <svg class="icon" width="30" height="35">
                   <use xlink:href="img/sprite-svg.svg#icon-basket"/>
                 </svg>
+                <span class="header-backet__amt">3</span>
               </a>
             </div>
           </div>
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="" class="main-nav__link">
+                  Каталог
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <h4 class="main-nav__sublist-title">Категории</h4>
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Юбки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Брюки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Верхняя одежда
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Платья
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Спортивные костюмы
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about-us.html" class="main-nav__link">
+                  О нас
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-delivery.html" class="main-nav__link">
+                  Доставка
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-payment.html" class="main-nav__link">
+                  Оплата
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Заказать звонок
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
-      <nav id="main-nav" class="main-nav" role="navigation">
-        <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active">
-            <a href="" class="main-nav__link">
-              Каталог
-            </a>
-            <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-              <ul class="main-nav__list  main-nav__list--lvl-2">
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Юбки
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Брюки
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Верхняя одежда
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Платья
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Спортивные костюмы
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-about-us.html" class="main-nav__link">
-              О нас
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-delivery.html" class="main-nav__link">
-              Доставка
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-payment.html" class="main-nav__link">
-              Оплата
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              Заказать звонок
-            </a>
-          </li>
-        </ul>
-      </nav>
       <section class="section section-page">
         <div class="section__container">
           <ul class="breadcrumbs">
@@ -134,17 +150,53 @@
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Верхняя одежда</a></li>
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Приталенный половер MARNI</a></li>
           </ul>
-          <div class="product">
-            <div class="product__media-col"></div>
+          <div class="product" id="product-product">
+            <div class="product__media-col">
+              <div class="single-product-image">
+                <div class="thumbnails">
+                  <a class="thumbnail">
+                    <img data-zoom-image="img/product01-555x600.jpg" src="img/product01-555x600.jpg" title="Bopo Designs Woolrich Klettersack Backpack" alt="Bopo Designs Woolrich Klettersack Backpack">
+                  </a>
+                </div>
+                <div id="gallery_01" class="thumbnails-additional owl-carousel">
+                  <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
+                    <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
+                  </a>
+                  <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
+                    <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
+                  </a>
+                  <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
+                    <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
+                  </a>
+                  <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
+                    <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
+                  </a>
+                  <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
+                    <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
+                  </a>
+                  <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
+                    <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
+                  </a>
+                  <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
+                    <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
+                  </a>
+                  <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
+                    <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
+                  </a>
+                </div>
+              </div>
+            </div>
             <div class="product__info-col">
               <h1 class="product__name">Marni</h1>
               <p class="product__caption">Приталенный пуловер с круглым вырезом и принтом</p>
               <p class="product__cost">3590 Р</p>
-              <div class="color-selection">
+              <div class="product__color">
                 Цвет: мокко
               </div>
-              <a href="#">Размер(RU)</a>
-              <a href="#">Таблица размеров</a>
+              <div class="product__size">
+                <a href="#">Размер(RU)</a>
+                <a href="#">Таблица размеров</a>
+              </div>
               <label class="field-select">
                 <div class="field-select__select-wrap">
                   <select class="field-select__select" id="" name="">
@@ -161,12 +213,13 @@
               <button class="btn btn--block">Добавить в корзину</button>
               <div class="product__description">
                 <div class="product__description-part">
-                  <p>Описание:</p>
-                  <p>В осенне-зимней коллекции 2017 года Стелла Маккартни переосмыслила простые вещи ‒ такие, как эта голубая рубашка. Теперь вместо отложного воротника — объемная деталь, напоминающая шейный платок. Также изменения коснулись длинных рукавов — они, постепенно расширяясь книзу за счет вставок-клиньев, дополнены широкими манжетами. Модель Damiane сшита из тонкого хлопка.</p>
+                  <h5>Описание:</h5>
+                  <p>В осенне-зимней коллекции 2017 года Стелла Маккартни переосмыслила простые вещи ‒ такие, как эта голубая рубашка. Теперь вместо отложного воротника — объемная деталь, напоминающая шейный платок. Также изменения коснулись длинных рукавов
+                    — они, постепенно расширяясь книзу за счет вставок-клиньев, дополнены широкими манжетами. Модель Damiane сшита из тонкого хлопка.</p>
                 </div>
                 <div class="product__description-part">
-                  <p>Хлопок: 50%; Полиамид: 50%</p>
                   <ul>
+                    <li>Хлопок: 50%; Полиамид: 50%</li>
                     <li>Страна производства: Испания</li>
                     <li>Артикул: 5189787</li>
                     <li>Артикул производителя: GCMDZ44Q00/FCD57</li>

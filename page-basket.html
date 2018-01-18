@@ -47,85 +47,99 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page__container">
-          <div class="header-search">
-            <svg class="icon" width="30" height="35">
-              <use xlink:href="img/sprite-svg.svg#icon-search"/>
-            </svg>
-          </div>
-          <a class="logo logo--top" href="index.html">
-            <img src="img/top-logo.png" alt="Kapelyush">
-          </a>
-          <div class="header-el">
-            <a href="#">Личный кабинет</a>
-            <div class="header-backet">
-              <a href="page-basket.html">
+          <div class="page-header__content">
+            <!-- <div class="header-search">
+              <form class="search__form">
+                <input type="search" name="search" id="search" class="search__input" placeholder="Search">
+                <label for="search" class="search__label">
+                  <svg class="icon" width="30" height="35">
+                    <use xlink:href="img/sprite-svg.svg#icon-search"></use>
+                  </svg>
+                </label>
+              </form>
+            </div> -->
+            <div class="header-search search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="Введите поисковый запрос">
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+            </div>
+            <a class="logo logo--top" href="index.html">
+              <img src="img/top-logo.png" alt="Kapelyush">
+            </a>
+            <div class="header-el">
+              <a class="header-login" href="#">Личный кабинет</a>
+              <a class="header-backet header-backet--completed" href="page-basket.html">
                 <svg class="icon" width="30" height="35">
                   <use xlink:href="img/sprite-svg.svg#icon-basket"/>
                 </svg>
+                <span class="header-backet__amt">3</span>
               </a>
             </div>
           </div>
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="" class="main-nav__link">
+                  Каталог
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <h4 class="main-nav__sublist-title">Категории</h4>
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Юбки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Брюки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Верхняя одежда
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Платья
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Спортивные костюмы
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about-us.html" class="main-nav__link">
+                  О нас
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-delivery.html" class="main-nav__link">
+                  Доставка
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-payment.html" class="main-nav__link">
+                  Оплата
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Заказать звонок
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
-      <nav id="main-nav" class="main-nav" role="navigation">
-        <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active">
-            <a href="" class="main-nav__link">
-              Каталог
-            </a>
-            <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-              <ul class="main-nav__list  main-nav__list--lvl-2">
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Юбки
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Брюки
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Верхняя одежда
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Платья
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Спортивные костюмы
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-about-us.html" class="main-nav__link">
-              О нас
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-delivery.html" class="main-nav__link">
-              Доставка
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-payment.html" class="main-nav__link">
-              Оплата
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              Заказать звонок
-            </a>
-          </li>
-        </ul>
-      </nav>
       <section class="section section--page">
         <div class="section__container">
           <ul class="breadcrumbs">
@@ -135,84 +149,180 @@
           <div class="section__header">
             <h1 class="section__title">Корзина</h1>
           </div>
-          <div class="basket">
-            <div class="basket-product">
-              <div class="basket-product__item">
-                <div class="basket-product__part basket-product__part--photo">
+          <div class="right-page-spacer">
+            <div class="basket">
+              <div class="basket-product">
+                <div class="basket-product__item">
+                  <div class="basket-product__part basket-product__part--photo">
+                    <img src="img/basket-product-image.jpg" width="88" height="126" alt="">
+                  </div>
+                  <div class="basket-product__part basket-product__part--name">
+                    <div class="prod-name">
+                      <h4>Marni</h4>
+                      <p>Приталенный пуловер с круглым вырезом и принтом</p>
+                    </div>
+                  </div>
+                  <div class="basket-product__part basket-product__part--options">
+                    <div class="description">
+                      <div class="description__item">
+                        <span class="description__option">Цвет:</span>
+                        <span class="description__value">Синий</span>
+                      </div>
+                      <div class="description__item">
+                        <span class="description__option">Размер:</span>
+                        <span class="description__value">XL</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket-product__part basket-product__part--quantity">
+                    <div class="quantity">
+                      <div class="quantity__option">Количество</div>
+                      <div class="quantity__value">
+                        <div class="incr">
+                          <div class="incr__minus incr__nav">
+                            <svg class="icon">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#minus"/>
+                            </svg>
+                          </div>
+                          <div class="incr__val">
+                            <span>16</span>
+                            <div class="incr__val-coner"></div>
+                          </div>
+                          <div class="incr__plus incr__nav">
+                            <svg class="icon">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#plus"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket-product__part basket-product__part--price">
+                    <div class="price">
+                      <div class="price__option">Стоимость</div>
+                      <div class="price__value">3590 Р</div>
+                    </div>
+                  </div>
+                  <a class="basket-product__close">Удалить</a>
                 </div>
-                <div class="basket-product__part basket-product__part--name">
-                </div>
-                <div class="basket-product__part basket-product__part--options">
-                </div>
-                <div class="basket-product__part basket-product__part--quantity">
-                </div>
-                <div class="basket-product__part basket-product__part--price">
+                <div class="basket-product__item">
+                  <div class="basket-product__part basket-product__part--photo">
+                    <img src="img/basket-product-image.jpg" width="88" height="126" alt="">
+                  </div>
+                  <div class="basket-product__part basket-product__part--name">
+                    <div class="prod-name">
+                      <h4>Stella mccartney</h4>
+                      <p>Платье-рубашка прямого кроя с принтом</p>
+                    </div>
+                  </div>
+                  <div class="basket-product__part basket-product__part--options">
+                    <div class="description">
+                      <div class="description__item">
+                        <span class="description__option">Цвет:</span>
+                        <span class="description__value">Разноцветный</span>
+                      </div>
+                      <div class="description__item">
+                        <span class="description__option">Размер:</span>
+                        <span class="description__value">S</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket-product__part basket-product__part--quantity">
+                    <div class="quantity">
+                      <div class="quantity__option">Количество</div>
+                      <div class="quantity__value">
+                        <div class="incr">
+                          <div class="incr__minus incr__nav">
+                            <svg class="icon">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#minus"/>
+                            </svg>
+                          </div>
+                          <div class="incr__val">
+                            <span>16</span>
+                            <div class="incr__val-coner"></div>
+                          </div>
+                          <div class="incr__plus incr__nav">
+                            <svg class="icon">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#plus"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket-product__part basket-product__part--price">
+                    <div class="price">
+                      <div class="price__option">Стоимость</div>
+                      <div class="price__value">3590 Р</div>
+                    </div>
+                  </div>
+                  <a class="basket-product__close">Удалить</a>
                 </div>
               </div>
+              <div class="basket-product__total-cost">Итого <strong>135 300 Р</strong></div>
             </div>
-            <div class="basket-product__total-cost">Итого <strong>135 300 Р</strong></div>
-          </div>
-          <div class="buy">
-            <h3 class="buy__title">Личные данные</h3>
-            <form action="" class="form buy__form">
-              <div class="row-field">
-                <div class="col-field col-field__inputs">
-                  <label class="field-text">
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
-                    </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
-                    </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
-                    </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="Город" id="" name="">
-                    </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="Адрес" id="" name="">
-                    </span>
-                  </label>
-                </div>
-                <div class="col-field col-field__delivery">
-                  <div class="field-delivery" style="display: -webkit-flex;display: -ms-flex;display: flex;border: 1px solid #ccc;-ms-align-items: center;align-items: center;justify-content: center; height: 100%;">
-                    Модуль расчета доставки
+            <div class="buy">
+              <h3 class="buy__title">Личные данные</h3>
+              <form action="" class="form buy__form">
+                <div class="row-field">
+                  <div class="col-field col-field__inputs">
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Город" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Адрес" id="" name="">
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col-field col-field__delivery">
+                    <div class="field-delivery" style="display: -webkit-flex;display: -ms-flex;display: flex;border: 1px solid #ccc;-ms-align-items: center;align-items: center;justify-content: center; height: 100%;">
+                      Модуль расчета доставки
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="field-checkbox">
-                <div class="field-checkbox__input-wrap">
-                  <label class="field-checkbox__name">
-                    <input class="field-checkbox__input" type="checkbox" id="" name="">
-                    <span class="field-checkbox__name-text">Зарегистрировать личный кабинет</span>
-                  </label>
-                </div>
-              </div>
-              <div class="field-box">
-                <div class="field-promo">
-                  <a href="#">Промокод</a>
-                </div>
-                <div class="field-actions">
-                  <div class="field-actions__text">Итого: 135 300 Р</div>
-                  <button class="btn btn--block">Оформить заказ</button>
-                </div>
                 <div class="field-checkbox">
-                  <label class="field-checkbox__name">
-                    <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                    <span class="field-checkbox__name-text">Я согласен с условиями заказа</span>
-                  </label>
+                  <div class="field-checkbox__input-wrap">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="">
+                      <span class="field-checkbox__name-text">Зарегистрировать личный кабинет</span>
+                    </label>
+                  </div>
                 </div>
-              </div>
-            </form>
+                <div class="field-box">
+                  <div class="field-promo">
+                    <a href="#">Промокод</a>
+                  </div>
+                  <div class="field-actions">
+                    <div class="field-actions__text">Итого: 135 300 Р</div>
+                    <button class="btn btn--block">Оформить заказ</button>
+                  </div>
+                  <div class="field-checkbox">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                      <span class="field-checkbox__name-text">Я согласен с условиями заказа</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>

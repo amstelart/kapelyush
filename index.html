@@ -47,85 +47,99 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page__container">
-          <div class="header-search">
-            <svg class="icon" width="30" height="35">
-              <use xlink:href="img/sprite-svg.svg#icon-search"/>
-            </svg>
-          </div>
-          <a class="logo logo--top" href="index.html">
-            <img src="img/top-logo.png" alt="Kapelyush">
-          </a>
-          <div class="header-el">
-            <a href="#">Личный кабинет</a>
-            <div class="header-backet">
-              <a href="page-basket.html">
+          <div class="page-header__content">
+            <!-- <div class="header-search">
+              <form class="search__form">
+                <input type="search" name="search" id="search" class="search__input" placeholder="Search">
+                <label for="search" class="search__label">
+                  <svg class="icon" width="30" height="35">
+                    <use xlink:href="img/sprite-svg.svg#icon-search"></use>
+                  </svg>
+                </label>
+              </form>
+            </div> -->
+            <div class="header-search search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="Введите поисковый запрос">
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+            </div>
+            <a class="logo logo--top" href="index.html">
+              <img src="img/top-logo.png" alt="Kapelyush">
+            </a>
+            <div class="header-el">
+              <a class="header-login" href="#">Личный кабинет</a>
+              <a class="header-backet header-backet--completed" href="page-basket.html">
                 <svg class="icon" width="30" height="35">
                   <use xlink:href="img/sprite-svg.svg#icon-basket"/>
                 </svg>
+                <span class="header-backet__amt">3</span>
               </a>
             </div>
           </div>
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="" class="main-nav__link">
+                  Каталог
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <h4 class="main-nav__sublist-title">Категории</h4>
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Юбки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Брюки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Верхняя одежда
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Платья
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Спортивные костюмы
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about-us.html" class="main-nav__link">
+                  О нас
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-delivery.html" class="main-nav__link">
+                  Доставка
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-payment.html" class="main-nav__link">
+                  Оплата
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Заказать звонок
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
-      <nav id="main-nav" class="main-nav" role="navigation">
-        <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active">
-            <a href="" class="main-nav__link">
-              Каталог
-            </a>
-            <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-              <ul class="main-nav__list  main-nav__list--lvl-2">
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Юбки
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Брюки
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Верхняя одежда
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Платья
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-2">
-                  <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
-                    Спортивные костюмы
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-about-us.html" class="main-nav__link">
-              О нас
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-delivery.html" class="main-nav__link">
-              Доставка
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="page-payment.html" class="main-nav__link">
-              Оплата
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              Заказать звонок
-            </a>
-          </li>
-        </ul>
-      </nav>
       <section class="section section--main section--slider">
         <div class="section__container">
           <div class="owl-carousel slider" id="main-slider">
@@ -328,10 +342,6 @@
           </div>
         </div>
       </section>
-      <!-- <main role="main">
-        <h1>NTH start project</h1>
-        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
-      </main> -->
     </div>
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
