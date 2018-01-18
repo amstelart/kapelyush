@@ -1,0 +1,26 @@
+// В этом файле должны быть стили для БЭМ-блока header-backet, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.header-backet {
+
+  $block-name:                &; // #{$block-name}__element
+
+  position: relative;
+
+  &__amt {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    // padding: 0 6px;
+  }
+
+}

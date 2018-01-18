@@ -6,8 +6,22 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  margin-left: 20px;
+
   &__item {
     display: inline-block;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    margin-left: 0;
+    margin-top: 20px;
+    #{$block-name}__item {
+      display: block;
+      text-align: center;
+    }
   }
 
 }

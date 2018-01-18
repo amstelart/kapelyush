@@ -15,4 +15,15 @@
   //   width: 100%;
   // }
 
+  @media (max-width: $screen-lg) {
+    position: static;
+    max-width: 270px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    max-width: 100%;
+    width: 100%;
+  }
+
 }

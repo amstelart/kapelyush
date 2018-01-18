@@ -19,14 +19,6 @@
       }
     }
 
-    .footer-info {
-      margin-left: 20px;
-      &__item {
-        &:not(:first-child) {
-          margin-left: 20px;
-        }
-      }
-    }
   }
 
   &__bottom {
@@ -38,6 +30,9 @@
       &:focus {
         color: lighten(#000, 50%);
       }
+    }
+    @media (max-width: $screen-md) {
+      text-align: center;
     }
   }
 
@@ -51,6 +46,10 @@
     &--info {
       justify-content: flex-end;
       align-items: center;
+    }
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
     }
   }
 

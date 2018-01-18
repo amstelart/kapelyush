@@ -1,0 +1,16 @@
+// В этом файле должны быть стили для БЭМ-блока header-el, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.header-el {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .header-login {
+    margin-right: 25px;
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+}

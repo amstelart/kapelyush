@@ -13,10 +13,12 @@
   @include row;
 
   &__media-col {
-    @include make-col(8);
+    @include col();
+    @include col(md,6);
   }
   &__info-col {
-    @include make-col(4);
+    @include col();
+    @include col(md,6);
   }
 
   &__name {

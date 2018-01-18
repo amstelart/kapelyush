@@ -45,6 +45,18 @@ $transition-time:             0.3s !default;
         max-height: 100vh;
         transition: max-height 0.6s;
       }
+
+      .main-nav__sublist-wrapper {
+        padding: 0.5em;
+        .main-nav__list--lvl-2 {
+          padding: 0.5em;
+        }
+      }
+      .main-nav__sublist-title {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
     }
 
     // настольный вид списка
@@ -52,6 +64,10 @@ $transition-time:             0.3s !default;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
+      #{$block-name}__item {}
+      #{$block-name}__link {}
+
     }
   }
 
@@ -77,7 +93,8 @@ $transition-time:             0.3s !default;
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
+      background-color: transparent;
+      color: #828282;
     }
 
     &--lvl-2 {
@@ -95,6 +112,12 @@ $transition-time:             0.3s !default;
     }
   }
 
+  &__sublist-title {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
   &__sublist-wrapper {
 
     &--lvl-2 {
@@ -103,10 +126,13 @@ $transition-time:             0.3s !default;
         position: absolute;
         top: 100%;
         left: 0;
+        background: #efefef;
+        padding: 25px 20px;
         z-index: 1;
         opacity: 0;
         height: 0;
         overflow: hidden;
+        text-align: left;
         transition: opacity $transition-time;
 
         // stylelint-disable  max-nesting-depth
@@ -117,6 +143,24 @@ $transition-time:             0.3s !default;
           overflow: visible;
         }
         // stylelint-enable
+      }
+
+      .main-nav__list {
+        flex-direction: column;
+        // justify-content: flex-start;
+        min-width: 200px;
+      }
+
+      .main-nav__link {
+        text-transform: inherit;
+        background-color: transparent;
+        padding: 0.5em 0;
+
+        &:hover,
+        &:focus {
+          color: inherit;
+          text-decoration: underline;
+        }
       }
     }
 
@@ -153,6 +197,19 @@ $transition-time:             0.3s !default;
     padding: 0;
     background: none;
     border: none;
+
+    &:before {
+      content: "Меню";
+      position: absolute;
+      left: 40px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
 
     .no-js & {
       display: none;

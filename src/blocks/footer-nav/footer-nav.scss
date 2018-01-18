@@ -22,4 +22,14 @@
     padding: 0.3em;
   }
 
+  @media (max-width: $screen-md) {
+    flex-direction: column;
+    text-align: center;
+    #{$block-name}__item {
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+  }
+
 }

@@ -8,7 +8,9 @@
   @include row;
 
   &__item {
-    @include make-col(6);
+    @include col();
+    @include col(sm, 6);
+    margin-bottom: 20px;
   }
 
   &__link {

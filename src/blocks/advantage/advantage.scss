@@ -10,11 +10,19 @@
   margin-bottom: 30px;
 
   &__item {
-    @include make-col(3);
+    @include col();
+    @include col(md, 6);
+    @include col(lg, 3);
     text-align: center;
 
     &:not(:last-of-type) {
       border-right: 1px solid #ccc;
+    }
+
+    @media (max-width: $screen-md) {
+      &:not(:last-of-type) {
+        border-right: none;
+      }
     }
   }
 

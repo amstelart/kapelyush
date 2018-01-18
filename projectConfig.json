@@ -83,7 +83,11 @@
     "catalog-header": [],
     "sort-filter": [],
     "cost-filter": [],
-    "incr": []
+    "incr": [],
+    "header-backet": [],
+    "header-el": [],
+    "header-search": [],
+    "single-product-image": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -108,7 +112,8 @@
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/lightslider/dist/js/lightslider.min.js",
     "./node_modules/nouislider/distribute/nouislider.js",
-    "./node_modules/object-fit-images/dist/ofi.js"
+    "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/@zeitiger/elevatezoom/jquery.elevateZoom-3.0.8.min.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"
