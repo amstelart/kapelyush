@@ -1,5 +1,14 @@
 // Если на проекте jQuery
 $(document).ready(function() {
+
+  $(function() {
+    $('nav#mobile-menu').mmenu({
+      navbar: {
+        title: 'Меню'
+      }
+    });
+  });
+
   // code
   $("#main-slider").owlCarousel({
     items: 1,

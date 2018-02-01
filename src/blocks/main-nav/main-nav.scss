@@ -24,6 +24,10 @@ $transition-time:             0.3s !default;
   position: relative;
   z-index: 10;
 
+  @media (max-width: ($menu-desktop-width - 1)) {
+    display: none;
+  }
+
   // первый уровень
   &__list {
     margin: 0;
@@ -197,14 +201,6 @@ $transition-time:             0.3s !default;
     padding: 0;
     background: none;
     border: none;
-
-    &:before {
-      content: "Меню";
-      position: absolute;
-      left: 40px;
-      font-size: 16px;
-      text-transform: uppercase;
-    }
 
     &:hover,
     &:focus {

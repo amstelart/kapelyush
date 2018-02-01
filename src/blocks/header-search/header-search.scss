@@ -12,6 +12,7 @@
 
 .search-wrapper {
   position: absolute;
+  background: #fff;
 }
 
 .search-wrapper.active {}
@@ -31,6 +32,9 @@
   border-radius: 50px;
   background: rgba(0,0,0,0.1);
   transition: all 0.5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+  @media (max-width: $screen-sm) {
+    width: 220px
+  }
 }
 
 .search-wrapper .input-holder .search-input {
