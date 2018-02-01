@@ -60,6 +60,7 @@
                 </label>
               </form>
             </div> -->
+            <a class="main-nav__toggler  burger" href="#mobile-menu"><span></span></a>
             <div class="header-search search-wrapper">
                 <div class="input-holder">
                     <input type="text" class="search-input" placeholder="Введите поисковый запрос">
@@ -68,7 +69,7 @@
                 <span class="close" onclick="searchToggle(this, event);"></span>
             </div>
             <a class="logo logo--top" href="index.html">
-              <img src="img/top-logo.png" alt="Kapelyush">
+              <img src="img/top-logo.svg" width="170" height="120" alt="Kapelyush">
             </a>
             <div class="header-el">
               <a class="header-login" href="#">Личный кабинет</a>
@@ -81,7 +82,7 @@
             </div>
           </div>
           <nav id="main-nav" class="main-nav" role="navigation">
-            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
             <ul class="main-nav__list">
               <li class="main-nav__item  main-nav__item--active">
                 <a href="" class="main-nav__link">
@@ -368,6 +369,29 @@
       </footer>
     </div>
   </div>
+  <nav id="mobile-menu">
+    <ul>
+      <li><span>Каталог</span>
+        <ul>
+          <li><a href="#about/history">Пункт меню</a></li>
+          <li><span>Пункт меню</span>
+            <ul>
+              <li><a href="#about/team/management">Пункт меню</a></li>
+              <li><a href="#about/team/sales">Пункт меню</a></li>
+              <li><a href="#about/team/development">Пункт меню</a></li>
+            </ul>
+          </li>
+          <li><a href="page-account.html">Пункт меню</a></li>
+          <li><a href="#about/address">Пункт меню</a></li>
+        </ul>
+      </li>
+      <li><a href="page-account.html">Пункт меню</a></li>
+      <li><a href="#about/address">Пункт меню</a></li>
+      <li><a href="page-account.html">Пункт меню</a></li>
+      <li><a href="#about/address">Пункт меню</a></li>
+      <li><a href="#contact">Пункт меню</a></li>
+    </ul>
+  </nav>
   <script src="js/script.min.js"></script>
 </body>
 </html>
