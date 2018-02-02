@@ -468,8 +468,26 @@
       <li><a href="#contact">Пункт меню</a></li>
     </ul>
   </nav>
-  <script src="js/jquery.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script src="js/global-script.js"></script>
+  <script>
+    // noUiSlider
+    var handlesSlider = document.getElementById('sort-slider');
+    noUiSlider.create(handlesSlider, {
+      tooltips: false,
+      start: [700, 5590],
+      connect: true,
+      range: {
+        'min': [700],
+        'max': [5590]
+      }
+    });
+    var nodes = [
+      document.getElementById('lower-value'),
+      document.getElementById('upper-value')
+    ];
+    handlesSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+      nodes[handle].innerHTML = values[handle];
+    });
+  </script>
 </body>
 </html>
