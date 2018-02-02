@@ -107,11 +107,6 @@ $(document).ready(function() {
       },
     },
   });
-  $("#product-product .thumbnails img").elevateZoom({
-    gallery: "gallery_01",
-    galleryActiveClass: "active",
-    borderColour: "#000",
-  });
   var thumbnails_additional = $('#product-product .thumbnails-additional .thumbnail');
   thumbnails_additional.each(function() {
     $(this).click(function() {
