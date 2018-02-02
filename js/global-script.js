@@ -107,18 +107,15 @@ $(document).ready(function() {
       },
     },
   });
-  // $("#product-product .thumbnails img").elevateZoom({
-  //   gallery: "gallery_01",
-  //   zoomType: "inner",
-  //   galleryActiveClass: "active",
-  //   borderColour: "#000",
-  // });
+
+  var single_product_image = $('#product-product .single-product-image .thumbnails .thumbnail img');
   var thumbnails_additional = $('#product-product .thumbnails-additional .thumbnail');
   thumbnails_additional.each(function() {
     $(this).click(function(e) {
       e.preventDefault();
       thumbnails_additional.removeClass('current-additional');
       $(this).addClass('current-additional');
+      single_product_image.attr('src', $(this).data('image'));
     });
   });
 
