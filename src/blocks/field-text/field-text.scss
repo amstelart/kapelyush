@@ -38,7 +38,7 @@ $border-radius:               3px !default;
     margin: 0;
     line-height: $line-height;
     font-size: 1em;
-    font-family: inherit;
+    font-family: $font-family;
     background-color: #fff;
     border: 1px solid $border-color;
     border-radius: $border-radius;

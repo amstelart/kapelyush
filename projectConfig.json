@@ -88,7 +88,9 @@
     "header-el": [],
     "header-search": [],
     "single-product-image": [],
-    "mobile-menu": []
+    "mobile-menu": [],
+    "request": [],
+    "page-header-line": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -96,7 +98,6 @@
     "./src/scss/functions.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "../../node_modules/jquery.mmenu/dist/jquery.mmenu.all.css",
-    "../../node_modules/lightslider/dist/css/lightslider.min.css",
     "../../node_modules/nouislider/distribute/nouislider.css"
   ],
   "addCssAfter": [
@@ -113,7 +114,6 @@
     "./node_modules/ismobilejs/isMobile.min.js",
     "./node_modules/owl.carousel/dist/owl.carousel.js",
     "./node_modules/swipejs/build/swipe.min.js",
-    "./node_modules/lightslider/dist/js/lightslider.min.js",
     "./node_modules/nouislider/distribute/nouislider.js",
     "./node_modules/object-fit-images/dist/ofi.js",
     "./node_modules/@zeitiger/elevatezoom/jquery.elevateZoom-3.0.8.min.js"

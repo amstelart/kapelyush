@@ -24,6 +24,28 @@
     }
   }
 
+  &--header {
+    .social__item {
+
+      margin: 0 5px;
+      width: 20px;
+      height: 20px;
+
+      .icon {
+        fill: #9f9f9f;
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover,
+      &:focus {
+        .icon {
+          fill: #000;
+        }
+      }
+    }
+  }
+
   &--product {
     #{$block-name}__item {
       &:first-of-type {

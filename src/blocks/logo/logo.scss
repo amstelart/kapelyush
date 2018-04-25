@@ -7,5 +7,17 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
+  text-decoration: none;
   white-space: nowrap;
+
+  img {
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__caption {
+    display: block;
+    color: #9f9f9f;
+  }
 }

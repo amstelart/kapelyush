@@ -316,5 +316,28 @@
   </div>
   @@include('blocks/mobile-menu/mobile-menu.html')
   @@include('_include/page_bottom.html')
+  <script>
+    // noUiSlider
+    var handlesSlider = document.getElementById('sort-slider');
+
+    noUiSlider.create(handlesSlider, {
+      tooltips: false,
+      start: [700, 5590],
+      connect: true,
+      range: {
+        'min': [700],
+        'max': [5590]
+      }
+    });
+
+    var nodes = [
+      document.getElementById('lower-value'),
+      document.getElementById('upper-value')
+    ];
+
+    handlesSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+      nodes[handle].innerHTML = values[handle];
+    });
+  </script>
 </body>
 </html>

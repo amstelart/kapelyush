@@ -34,4 +34,48 @@ $line-height:                 1.375em !default;
     line-height: $line-height;
     color: currentColor;
   }
+
+  &--request {
+
+    #{$block-name}__title {
+      text-align: center;
+      font-size: 24px;
+      margin: 0;
+      margin-bottom: 0;
+      font-family: 'Lora';
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 34px;
+    }
+
+    .field-text {
+      margin-bottom: 30px;
+    }
+
+    .field-text__input {
+      border-color: #b8b8b8;
+      background: transparent;
+      border-radius: 0;
+      padding: 14px 15px;
+
+      &:focus {
+        box-shadow: rgba(235, 121, 38, 0.7) 0px 0px 0px 2px;
+      }
+    }
+
+    .field-actions {
+      margin-top: 0;
+      margin-bottom: 35px;
+
+      .btn {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 14px 15px;
+      }
+    }
+
+    .field-checkbox__name {
+      color: #7d7d7d;
+    }
+  }
 }

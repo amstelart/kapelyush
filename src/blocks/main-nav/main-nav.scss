@@ -23,6 +23,7 @@ $transition-time:             0.3s !default;
 
   position: relative;
   z-index: 10;
+  border-bottom: 1px solid #d6d6d6;
 
   @media (max-width: ($menu-desktop-width - 1)) {
     display: none;
@@ -33,6 +34,10 @@ $transition-time:             0.3s !default;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    &--lvl-2 {
+      padding: 17px 20px;
+    }
 
     // мобильный вид списка
     @media (max-width: ($menu-desktop-width - 1)) {
@@ -88,7 +93,9 @@ $transition-time:             0.3s !default;
 
   &__link {
     display: block;
-    padding: 0.5em;
+    position: relative;
+    padding: 1.2em 1em;
+    font-weight: 700;
     text-decoration: none;
     background-color: #fff;
     color: #000;
@@ -99,6 +106,10 @@ $transition-time:             0.3s !default;
       text-decoration: none;
       background-color: transparent;
       color: #828282;
+
+      #{$block-name}__link-border {
+        opacity: 1;
+      }
     }
 
     &--lvl-2 {
@@ -116,9 +127,18 @@ $transition-time:             0.3s !default;
     }
   }
 
+  &__link-border {
+    opacity: 0;
+    height: 2px;
+    background: #000;
+    width: 100%;
+    transform: translateY(18px);
+  }
+
   &__sublist-title {
     text-transform: uppercase;
     margin-top: 5px;
+    font-family: $font-family;
     font-size: 14px;
   }
 
@@ -128,10 +148,10 @@ $transition-time:             0.3s !default;
 
       @media (min-width: $menu-desktop-width) {
         position: absolute;
-        top: 100%;
+        top: calc(100% + 1px);
         left: 0;
-        background: #efefef;
-        padding: 25px 20px;
+        background: #fff;
+        // padding: 17px 20px;
         z-index: 1;
         opacity: 0;
         height: 0;
@@ -158,12 +178,14 @@ $transition-time:             0.3s !default;
       .main-nav__link {
         text-transform: inherit;
         background-color: transparent;
-        padding: 0.5em 0;
+        padding: 0.3em 0;
+        font-weight: 400;
+        font-size: 14px;
 
         &:hover,
         &:focus {
           color: inherit;
-          text-decoration: underline;
+          color: #8d8d8d;
         }
       }
     }

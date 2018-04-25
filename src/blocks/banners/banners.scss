@@ -7,9 +7,17 @@
   $block-name:                &; // #{$block-name}__element
   @include row;
 
-  &__item {
+  &__main-col {
     @include col();
-    @include col(sm, 6);
+    @include col(sm, 8);
+  }
+
+  &__second-col {
+    @include col();
+    @include col(sm, 4);
+  }
+
+  &__item {
     margin-bottom: 20px;
   }
 

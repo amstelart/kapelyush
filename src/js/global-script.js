@@ -120,41 +120,6 @@ $(document).ready(function() {
     });
   });
 
-  // noUiSlider
-  var handlesSlider = document.getElementById('sort-slider');
-
-  noUiSlider.create(handlesSlider, {
-    tooltips: false,
-    start: [700, 5590],
-    connect: true,
-    range: {
-      'min': [700],
-      'max': [5590]
-    }
-  });
-
-  var nodes = [
-    document.getElementById('lower-value'),
-    document.getElementById('upper-value')
-  ];
-
-  handlesSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
-    nodes[handle].innerHTML = values[handle];
-  });
-
-  // Product slider
-  $('#vertical').lightSlider({
-    gallery:true,
-    item:1,
-    vertical:true,
-    verticalHeight:295,
-    currentPagerPosition:'right',
-    vThumbWidth:150,
-    thumbItem:4,
-    thumbMargin:14,
-    slideMargin:0
-  });
-
 
 });
 

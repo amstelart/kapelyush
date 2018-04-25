@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kapelyush</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <section class="section section--page">
+        <div class="section__container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Заказать звонок</a></li>
+          </ul>
+
+          <main role="main">
+
+            <div class="request">
+              <div class="request__col-form">
+                <form action="" class="form form--request">
+                  <h2 class="form__title">Заказать звонок</h2>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+                    </span>
+                  </label>
+                  <div class="field-actions">
+                    <button class="btn btn--orange btn--block">Заказать звонок</button>
+                  </div>
+                  <div class="field-checkbox">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                      <span class="field-checkbox__name-text">Я принимаю условия передачи информации</span>
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="request__col-bg" style="background-image: url('img/request-bg.jpg');">
+                <img src="img/request-bg.jpg" alt="">
+              </div>
+            </div>
+
+          </main>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+  @@include('blocks/mobile-menu/mobile-menu.html')
+  @@include('_include/page_bottom.html')
+</body>
+</html>

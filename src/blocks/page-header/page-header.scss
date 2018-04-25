@@ -5,7 +5,7 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
-  padding-top: 50px;
+  padding-top: 20px;
 
   @media (max-width: $screen-md) {
     padding-top: 25px;
@@ -16,11 +16,13 @@
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
 
   .page__container {
+    
   }
+
   .burger {
     top: 0;
     left: 0;
