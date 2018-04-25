@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js  page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Kapelyush</title>
@@ -8,7 +9,9 @@
 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
+
 <link href="css/style.min.css" rel="stylesheet" media="screen">
+
 <script>
   // Маркер работающего javascript
   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -32,20 +35,17 @@
       console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
     }
   });
+
 </script>
-<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-<link rel="manifest" href="/img/site.webmanifest">
-<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
-<link rel="shortcut icon" href="/img/favicon.ico">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
-<meta name="msapplication-config" content="/img/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"></head>
+
+</head>
+
 <body>
+
   <div class="page__inner">
+
     <div class="page__content">
+
       <div class="page-header-line">
         <div class="page__container">
           <div class="page-header-line__content">
@@ -53,12 +53,12 @@
             <div class="social social--header">
               <a class="social__item" href="#">
                 <svg class="icon">
-                  <use xlink:href="img/sprite-svg.svg#icon-whatsapp"/>
+                  <use xlink:href="img/sprite-svg.svg#icon-whatsapp"></use>
                 </svg>
               </a>
               <a class="social__item" href="#">
                 <svg class="icon">
-                  <use xlink:href="img/sprite-svg.svg#icon-instagram"/>
+                  <use xlink:href="img/sprite-svg.svg#icon-instagram"></use>
                 </svg>
               </a>
             </div>
@@ -66,40 +66,50 @@
           </div>
         </div>
       </div>
+
       <header class="page-header" role="banner">
         <div class="page__container">
+
           <div class="page-header__content">
+
             <a class="main-nav__toggler  burger" href="#mobile-menu"><span></span></a>
+
             <div class="header-search search-wrapper">
                 <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Введите поисковый запрос">
+                    <input type="text" class="search-input" placeholder="Введите поисковый запрос" />
                     <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
                 </div>
                 <span class="close" onclick="searchToggle(this, event);"></span>
             </div>
+
             <a class="logo logo--top" href="index.html">
-              <img src="img/top-logo.svg" width="170" height="120" alt="Kapelyush">
+              <img src="img/top-logo.svg" width="114" height="82" alt="Kapelyush">
+              <span class="logo__caption">магазин женской одежды</span>
             </a>
+
             <div class="header-el">
               <a class="header-login" href="#">Личный кабинет</a>
               <a class="header-backet header-backet--completed" href="page-basket.html">
                 <svg class="icon" width="30" height="35">
-                  <use xlink:href="img/sprite-svg.svg#icon-basket"/>
+                  <use xlink:href="img/sprite-svg.svg#icon-basket"></use>
                 </svg>
                 <span class="header-backet__amt">3</span>
               </a>
             </div>
+
           </div>
+
           <nav id="main-nav" class="main-nav" role="navigation">
             <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
             <ul class="main-nav__list">
               <li class="main-nav__item  main-nav__item--active">
                 <a href="" class="main-nav__link">
                   Каталог
+                  <div class="main-nav__link-border"></div>
                 </a>
                 <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-                  <h4 class="main-nav__sublist-title">Категории</h4>
                   <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <h4 class="main-nav__sublist-title">Категории</h4>
                     <li class="main-nav__item  main-nav__item--lvl-2">
                       <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
                         Юбки
@@ -108,6 +118,11 @@
                     <li class="main-nav__item  main-nav__item--lvl-2">
                       <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
                         Брюки
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="page-catalog.html" class="main-nav__link  main-nav__link--lvl-2">
+                        Блузки
                       </a>
                     </li>
                     <li class="main-nav__item  main-nav__item--lvl-2">
@@ -131,27 +146,36 @@
               <li class="main-nav__item">
                 <a href="page-about-us.html" class="main-nav__link">
                   О нас
+                  <div class="main-nav__link-border"></div>
                 </a>
               </li>
               <li class="main-nav__item">
                 <a href="page-delivery.html" class="main-nav__link">
                   Доставка
+                  <div class="main-nav__link-border"></div>
                 </a>
               </li>
               <li class="main-nav__item">
                 <a href="page-payment.html" class="main-nav__link">
                   Оплата
+                  <div class="main-nav__link-border"></div>
                 </a>
               </li>
               <li class="main-nav__item">
                 <a href="page-call.html" class="main-nav__link">
                   Заказать звонок
+                  <div class="main-nav__link-border"></div>
                 </a>
               </li>
+
             </ul>
           </nav>
+
         </div>
+
       </header>
+
+
       <section class="section section-page">
         <div class="section__container">
           <ul class="breadcrumbs">
@@ -160,41 +184,55 @@
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Верхняя одежда</a></li>
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Приталенный половер MARNI</a></li>
           </ul>
+
           <div class="product" id="product-product">
             <div class="product__media-col">
+
               <div class="single-product-image">
+
                 <div class="thumbnails">
                   <div class="thumbnail">
                     <img data-zoom-image="img/product01-555x600.jpg" src="img/product01-555x600.jpg" title="Bopo Designs Woolrich Klettersack Backpack" alt="Bopo Designs Woolrich Klettersack Backpack">
                   </div>
                 </div>
+
                 <div id="gallery_01" class="thumbnails-additional owl-carousel">
+
                   <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
                     <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
                   </a>
+
                   <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product02-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
                     <img src="img/product02-555x600.jpg" title="тайтл товара" alt="альт товара">
                   </a>
+
                   <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product03-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
                     <img src="img/product03-555x600.jpg" title="тайтл товара" alt="альт товара">
                   </a>
+
                   <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product04-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
                     <img src="img/product04-555x600.jpg" title="тайтл товара" alt="альт товара">
                   </a>
+
                   <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product05-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
                     <img src="img/product05-555x600.jpg" title="тайтл товара" alt="альт товара">
                   </a>
+
                   <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product06-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
                     <img src="img/product06-555x600.jpg" title="тайтл товара" alt="альт товара">
                   </a>
+
                   <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
                     <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
                   </a>
+
                   <a href="#" class="thumbnail elevatezoom-gallery" data-image="img/product01-555x600.jpg" data-zoom-image="img/product01-555x600.jpg" title="тайтл товара">
                     <img src="img/product01-555x600.jpg" title="тайтл товара" alt="альт товара">
                   </a>
+
                 </div>
               </div>
+
             </div>
             <div class="product__info-col">
               <h1 class="product__name">Marni</h1>
@@ -221,6 +259,7 @@
                 </div>
               </label>
               <button class="btn btn--block">Добавить в корзину</button>
+
               <div class="product__description">
                 <div class="product__description-part">
                   <h5>Описание:</h5>
@@ -239,35 +278,40 @@
                   </ul>
                 </div>
               </div>
+
               <h5><a href="#">Доставка и возврат</a></h5>
               <div class="social social--product">
                 <div class="social__title">Поделиться</div>
                 <a class="social__item" href="#">
                   <svg class="icon" width="30" height="17">
-                    <use xlink:href="img/sprite-svg.svg#icon-vk"/>
+                    <use xlink:href="img/sprite-svg.svg#icon-vk"></use>
                   </svg>
                 </a>
                 <a class="social__item" href="#">
                   <svg class="icon" width="12" height="21">
-                    <use xlink:href="img/sprite-svg.svg#icon-fa"/>
+                    <use xlink:href="img/sprite-svg.svg#icon-fa"></use>
                   </svg>
                 </a>
                 <a class="social__item" href="#">
                   <svg class="icon" width="23" height="19">
-                    <use xlink:href="img/sprite-svg.svg#icon-tw"/>
+                    <use xlink:href="img/sprite-svg.svg#icon-tw"></use>
                   </svg>
                 </a>
               </div>
             </div>
           </div>
+
         </div>
+
       </section>
+
       <section class="section section--main">
         <div class="section__container">
           <div class="section__header">
             <h2 class="section__title">Похожие товары</h2>
           </div>
           <div class="owl-carousel content-carousel">
+
             <div class="product-card">
               <a href="#" class="product-card__link">
                 <div class="product-card__image">
@@ -280,6 +324,7 @@
                 <div class="product-card__cost">3390 Р</div>
               </a>
             </div>
+
             <div class="product-card">
               <a href="#" class="product-card__link">
                 <div class="product-card__image">
@@ -292,6 +337,7 @@
                 <div class="product-card__cost">3390 Р</div>
               </a>
             </div>
+
             <div class="product-card">
               <a href="#" class="product-card__link">
                 <div class="product-card__image">
@@ -304,6 +350,7 @@
                 <div class="product-card__cost">3390 Р</div>
               </a>
             </div>
+
             <div class="product-card">
               <a href="#" class="product-card__link">
                 <div class="product-card__image">
@@ -316,6 +363,7 @@
                 <div class="product-card__cost">3390 Р</div>
               </a>
             </div>
+
             <div class="product-card">
               <a href="#" class="product-card__link">
                 <div class="product-card__image">
@@ -328,14 +376,19 @@
                 <div class="product-card__cost">3390 Р</div>
               </a>
             </div>
+
           </div>
         </div>
       </section>
+
     </div>
+
     <div class="page__footer-wrapper">
+
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__top">
           <div class="page__container">
+
             <div class="page-footer__part page-footer__part--nav">
               <a href="index.html" class="logo logo--bottom">
                 <img src="img/bottom-logo.png" alt="Kapelyush">
@@ -350,16 +403,17 @@
                 <li class="footer-nav__item"><a class="footer-nav__link" href="#">Обратная связь</a></li>
               </ul>
             </div>
+
             <div class="page-footer__part page-footer__part--info">
               <div class="social">
                 <a class="social__item" href="#">
                   <svg class="icon" width="26" height="26">
-                    <use xlink:href="img/sprite-svg.svg#icon-whatsapp"/>
+                    <use xlink:href="img/sprite-svg.svg#icon-whatsapp"></use>
                   </svg>
                 </a>
                 <a class="social__item" href="#">
                   <svg class="icon" width="26" height="26">
-                    <use xlink:href="img/sprite-svg.svg#icon-instagram"/>
+                    <use xlink:href="img/sprite-svg.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </div>
@@ -368,6 +422,7 @@
                 <div class="footer-info__item"><a href="#">Политика конфиденциальности</a></div>
               </div>
             </div>
+
           </div>
         </div>
         <div class="page-footer__bottom">
@@ -376,8 +431,11 @@
           </div>
         </div>
       </footer>
+
     </div>
+
   </div>
+
   <nav id="mobile-menu">
     <ul>
       <li><span>Каталог</span>
@@ -402,5 +460,7 @@
     </ul>
   </nav>
   <script src="js/script.min.js"></script>
+
 </body>
+
 </html>
