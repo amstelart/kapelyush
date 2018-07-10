@@ -20,4 +20,24 @@
     display: block;
     color: #9f9f9f;
   }
+
+  &--bottom {
+    svg {
+      fill: #fff;
+      display: none;
+    }
+    @media (max-width: $screen-md) {
+
+      margin-bottom: 20px;
+
+      svg {
+        display: block;
+        width: 130px;
+      }
+
+      .logo-img {
+        display: none;
+      }
+    }
+  }
 }

@@ -90,7 +90,14 @@
     "single-product-image": [],
     "mobile-menu": [],
     "request": [],
-    "page-header-line": []
+    "page-header-line": [],
+    "sign-page": [],
+    "lk-page": [],
+    "lk-nav": [],
+    "user-details": [],
+    "user-details-form": [],
+    "delivery": [],
+    "size": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

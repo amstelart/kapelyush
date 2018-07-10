@@ -1,0 +1,31 @@
+// В этом файле должны быть стили для БЭМ-блока user-details-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.user-details-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  justify-content: space-between;
+
+  .field-text {
+    flex-grow: 1;
+  }
+
+  .field-actions {
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-transform: uppercase;
+      color: #000;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700;
+      padding: 0.6em 0.9em;
+    }
+  }
+
+}

@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока lk-nav, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.lk-nav {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 4px;
+
+    &--active {
+      
+      #{$block-name}__link {
+        background: #fff;
+        color: #9e9a9a;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    background: #e9e4e4;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0.7em 1em;
+    text-align: center;
+    color: #030303;
+  }
+
+}

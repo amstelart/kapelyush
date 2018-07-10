@@ -33,4 +33,10 @@
       color: #000;
     }
   }
+
+  @media (max-width: $screen-sm ) {
+    .h-order-link {
+      display: none;
+    }
+  }
 }

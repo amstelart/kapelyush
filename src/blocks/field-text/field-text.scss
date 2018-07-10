@@ -72,6 +72,14 @@ $border-radius:               3px !default;
     &::placeholder {
       color: $text-color--muted;
       opacity: 1;
+
+      &:after {
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        color: red;
+        content: '*';
+      }
     }
 
     @at-root textarea#{&} {

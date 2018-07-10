@@ -1,0 +1,16 @@
+// В этом файле должны быть стили для БЭМ-блока sign-page, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sign-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: 25px;
+
+  &__center {
+    margin: 40px auto 20px;
+    max-width: 265px;
+  }
+
+}

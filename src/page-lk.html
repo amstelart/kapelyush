@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kapelyush</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <section class="section lk-page">
+        <div class="section__container">
+          <div class="section__header">
+            <h1 class="section__title">Личный кабинет</h1>
+          </div>
+
+          <div class="lk-page__wrap">
+            <div class="lk-page__sidebar">
+              <nav class="lk-nav">
+                <ul class="lk-nav__list">
+                  <li class="lk-nav__item lk-nav__item--active">
+                    <a href="#" class="lk-nav__link">Учетные данные</a>
+                  </li>
+                  <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">Мои заказы</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="lk-page__content">
+              <div class="user-details">
+                <div class="user-details__item">
+                  <div class="user-details__dt"><span>Имя</span></div>
+                  <div class="user-details__dd"><span>Елена</span>
+                    <button class="user-details__btn">
+                      <svg class="user-details__icon" width="15px" height="15px">
+                        <use xlink:href="img/sprite-svg.svg#icon-pen"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="user-details__item">
+                  <div class="user-details__dt"><span>Фамилия</span></div>
+                  <div class="user-details__dd"><span>Ильина</span>
+                    <button class="user-details__btn">
+                      <svg class="user-details__icon" width="15px" height="15px">
+                        <use xlink:href="img/sprite-svg.svg#icon-pen"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="user-details__item">
+                  <div class="user-details__dt"><span>Отчество</span></div>
+                  <div class="user-details__dd"><span>Сергеевна</span>
+                    <button class="user-details__btn">
+                      <svg class="user-details__icon" width="15px" height="15px">
+                        <use xlink:href="img/sprite-svg.svg#icon-pen"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="user-details__item">
+                  <div class="user-details__dt"><span>Телефон</span></div>
+                  <div class="user-details__dd"><span>8 951-087-21-25</span>
+                    <button class="user-details__btn">
+                      <svg class="user-details__icon" width="15px" height="15px">
+                        <use xlink:href="img/sprite-svg.svg#icon-pen"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="user-details__item">
+                  <div class="user-details__dt"><span>Email</span></div>
+                  <div class="user-details__dd"><span>vu@yandex.ru</span>
+                    <button class="user-details__btn">
+                      <svg class="user-details__icon" width="15px" height="15px">
+                        <use xlink:href="img/sprite-svg.svg#icon-pen"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="user-details__item">
+                  <div class="user-details__dt"><span>Город</span></div>
+                  <div class="user-details__dd"><span>Курск</span>
+                    <button class="user-details__btn">
+                      <svg class="user-details__icon" width="15px" height="15px">
+                        <use xlink:href="img/sprite-svg.svg#icon-pen"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="user-details__item">
+                  <div class="user-details__dt"><span>Адрес</span></div>
+                  <div class="user-details__dd user-details__dd--editing">
+                    <form action="" class="user-details-form">
+                      <label class="field-text">
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+                        </span>
+                      </label>
+                      <div class="field-actions">
+                        <button class="btn">применить</button>
+                        <a href="#">Отменить</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lk-page__wrap">
+            <div class="lk-page__sidebar"></div>
+            <div class="lk-page__content">
+              <h3 class="lk-page__title">Смена пароля</h3>
+              <form action="" class="">
+                <label class="field-text">
+                  <span class="field-text__name">Пароль *</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="password" placeholder="placeholder" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Пароль еще раз *</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="password" placeholder="placeholder" id="" name="">
+                  </span>
+                </label>
+                <div class="field-actions">
+                  <button class="btn">применить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+  @@include('blocks/mobile-menu/mobile-menu.html')
+  @@include('_include/page_bottom.html')
+</body>
+</html>

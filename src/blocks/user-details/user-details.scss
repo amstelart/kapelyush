@@ -1,0 +1,71 @@
+// В этом файле должны быть стили для БЭМ-блока user-details, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.user-details {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    display: flex;
+    margin-bottom: 15px;
+
+    &:hover,
+    &:focus {
+      background: #f3f3f3;
+    }
+  }
+
+  &__dt {
+    min-width: 90px;
+    flex-shrink: 0;
+    padding: 10px;
+  }
+
+  &__dd {
+
+    flex-grow: 1;
+    position: relative;
+    padding: 10px 40px 10px 5px;
+
+    &--editing {
+      padding: 10px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__btn {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: $field-padding-vertical  $field-padding-horizontal;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+
+  &__icon {
+
+  }
+
+}

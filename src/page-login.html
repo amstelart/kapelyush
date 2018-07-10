@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kapelyush</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <section class="section sign-page">
+        <div class="section__container">
+          <div class="section__header">
+            <h1 class="section__title">Авторизация</h1>
+          </div>
+
+          <div class="sign-page__center">
+            <div class="sign-page__form">
+              <form action="">
+                <label class="field-text">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" placeholder="E-mail *" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="password" placeholder="Пароль *" id="" name="">
+                  </span>
+                </label>
+                <div class="field-actions">
+                  <button class="btn btn--block">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+  @@include('blocks/mobile-menu/mobile-menu.html')
+  @@include('_include/page_bottom.html')
+</body>
+</html>

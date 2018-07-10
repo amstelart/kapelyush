@@ -1,0 +1,32 @@
+// В этом файле должны быть стили для БЭМ-блока delivery, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.delivery {
+
+  $block-name:                &; // #{$block-name}__element
+  margin-bottom: 20px;
+
+  &__link {
+    font-family: "21 Cent", serif;
+    font-weight: 700;
+    line-height: 1.375em;
+    color: currentColor;
+  }
+
+  &__caption {
+    border: 1px solid #c9c8c8;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.35);
+    padding: 20px 25px;
+    min-width: 600px;
+    top: 25px;
+    z-index: 10;
+    max-height: 265px;
+    overflow-y: scroll;
+
+    h4 {
+      text-align: center;
+    }
+  }
+
+}
