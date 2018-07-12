@@ -178,46 +178,67 @@
       </header>
 
 
-      <section class="section section--page">
+      <section class="section lk-page">
         <div class="section__container">
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Заказать звонок</a></li>
-          </ul>
+          <div class="section__header">
+            <h1 class="section__title">Личный кабинет</h1>
+          </div>
 
-          <main role="main">
-
-            <div class="request">
-              <div class="request__col-form">
-                <form action="" class="form form--request">
-                  <h2 class="form__title">Заказать звонок</h2>
-                  <label class="field-text">
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
-                    </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
-                    </span>
-                  </label>
-                  <div class="field-actions">
-                    <button class="btn btn--orange btn--block">Заказать звонок</button>
-                  </div>
-                  <div class="field-checkbox">
-                    <label class="field-checkbox__name">
-                      <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                      <span class="field-checkbox__name-text">Я принимаю условия передачи информации</span>
-                    </label>
-                  </div>
-                </form>
-              </div>
-              <div class="request__col-bg" style="background-image: url('img/request-bg.jpg');">
-                <img src="img/request-bg.jpg" alt="">
+          <div class="lk-page__wrap">
+            <div class="lk-page__sidebar">
+              <nav class="lk-nav">
+                <ul class="lk-nav__list">
+                  <li class="lk-nav__item">
+                    <a href="page-lk--01.html" class="lk-nav__link">Учетные данные</a>
+                  </li>
+                  <li class="lk-nav__item lk-nav__item--active">
+                    <a href="page-lk--02.html" class="lk-nav__link">Мои заказы</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="lk-page__content">
+              <div class="lk-page__content-inner">
+                <div class="table-mobile-scroll">
+                  <table class="table-orders">
+                    <thead class="table__header">
+                      <tr>
+                        <th>№ заказа</th>
+                        <th>Кол-во, шт.</th>
+                        <th>Статус</th>
+                        <th>Всего, руб.</th>
+                        <th>Дата</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table__body">
+                      <tr>
+                        <td>7801350</td>
+                        <td>10</td>
+                        <td>оплачено</td>
+                        <td>50 370</td>
+                        <td>12.06.18</td>
+                      </tr>
+                      <tr>
+                        <td>7801350</td>
+                        <td>10</td>
+                        <td>оплачено</td>
+                        <td>50 370</td>
+                        <td>12.06.18</td>
+                      </tr>
+                      <tr>
+                        <td>7801350</td>
+                        <td>10</td>
+                        <td>оплачено</td>
+                        <td>50 370</td>
+                        <td>12.06.18</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-
-          </main>
+          </div>
+          <hr>
 
         </div>
 
