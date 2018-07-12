@@ -32,6 +32,18 @@ $line-height:                 1.375em !default;
     margin-right: 0.6em;
     font-weight: 400;
     line-height: $line-height;
+
+    .conf-link {
+      display: block;
+      color: #000;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: lighten(#000, 20%);
+      }
+    }
   }
 
   &__name-text {

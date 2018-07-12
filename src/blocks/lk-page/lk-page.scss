@@ -6,8 +6,14 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  margin-bottom: 40px;
+
   &__wrap {
     @include row;
+  }
+
+  hr {
+    border-color: #d6d6d6;
   }
 
   &__sidebar {
@@ -18,7 +24,15 @@
   &__content {
     @include col();
     @include col(lg, 9);
-    padding: 0 20% 0 7% !important;
   }
 
+  &__content-inner {
+    max-width: 590px;
+    margin-left: 40px;
+
+    @media (max-width: ($screen-md - 1)) {
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
 }

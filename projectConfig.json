@@ -97,7 +97,9 @@
     "user-details": [],
     "user-details-form": [],
     "delivery": [],
-    "size": []
+    "size": [],
+    "table-orders": [],
+    "color-filter": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

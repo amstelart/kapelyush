@@ -9,6 +9,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: ($screen-md - 1)) {
+    flex-direction: column;
+  }
+
   .field-text {
     flex-grow: 1;
   }
@@ -25,6 +29,10 @@
       text-align: center;
       font-weight: 700;
       padding: 0.6em 0.9em;
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      margin: 0;
     }
   }
 

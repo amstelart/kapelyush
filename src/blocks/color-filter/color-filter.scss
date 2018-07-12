@@ -1,0 +1,43 @@
+// В этом файле должны быть стили для БЭМ-блока color-filter, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.color-filter {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+
+    .color {
+      border: 1px solid #fff;
+      border-radius: 30px;
+      cursor: pointer;
+      height: 30px;
+      margin: 0 auto;
+      vertical-align: bottom;
+      width: 30px;
+
+      div {
+        border: 1px solid #e8e8e8;
+        border-radius: 1em;
+        height: 22px;
+        margin: 3px;
+        width: 22px;
+      }
+    }
+
+    &--active {
+
+      .color {
+        border-color: #666;
+      }
+    }
+  }
+
+}
