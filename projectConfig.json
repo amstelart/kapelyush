@@ -99,7 +99,8 @@
     "delivery": [],
     "size": [],
     "table-orders": [],
-    "color-filter": []
+    "color-filter": [],
+    "field-delivery": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

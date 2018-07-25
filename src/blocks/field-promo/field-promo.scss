@@ -6,13 +6,41 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  color: #000;
+  display: flex;
+  max-width: 623px;
   background: #fff;
+  align-items: center;
+  padding: 20px 0;
 
-  a {
-    display: block;
-    color: #000;
-    padding: 20px;
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    flex-grow: 1;
+
+    .field-text__name {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+    .field-text__input-wrap {
+      margin-right: 20px;
+      flex-grow: 1;
+    }
   }
+
+  &__actions {
+    padding: 0;
+    margin: 0;
+
+    .btn {
+      margin-bottom: 0;
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+  }
+
+  // @media (max-width: ($screen-sm - 1)) {
+  //   flex-direction: column;
+  // }
 
 }

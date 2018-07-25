@@ -151,10 +151,10 @@
             </div>
 
             <div class="buy">
-              <h3 class="buy__title">Личные данные</h3>
               <form action="" class="form buy__form">
                 <div class="row-field">
                   <div class="col-field col-field__inputs">
+                    <h3 class="buy__title">Личные данные</h3>
                     <label class="field-text">
                       <span class="field-text__input-wrap">
                         <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
@@ -183,9 +183,36 @@
                   </div>
 
                   <div class="col-field col-field__delivery">
-                    <div class="field-delivery" style="display: -webkit-flex;display: -ms-flex;display: flex;border: 1px solid #ccc;-ms-align-items: center;align-items: center;justify-content: center; height: 100%;">
-                      Модуль расчета доставки
+                    <h3 class="field-delivery__title">Способ доставки</h3>
+                    <div class="field-delivery">
+                      <div class="field-radio field-radio--delivery">
+                        <div class="field-radio__input-wrap">
+                          <label class="field-radio__name">
+                            <input class="field-radio__input" type="radio" id="" name="demo-radio" checked>
+                            <span class="field-radio__name-text">Доставка по Москве и области</span>
+                          </label>
+                        </div>
+                        <div class="field-radio__input-wrap">
+                          <label class="field-radio__name">
+                            <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                            <span class="field-radio__name-text">Доставка Почтой России</span>
+                          </label>
+                        </div>
+                        <div class="field-radio__input-wrap">
+                          <label class="field-radio__name">
+                            <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                            <span class="field-radio__name-text">Доставка DPD</span>
+                          </label>
+                        </div>
+                        <div class="field-radio__input-wrap">
+                          <label class="field-radio__name">
+                            <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                            <span class="field-radio__name-text">Доставка CDEK</span>
+                          </label>
+                        </div>
+                      </div>
                     </div>
+                    <div class="field-delivery__cost">Стоимость доставки: <b>850 Р</b></div>
                   </div>
                 </div>
 
@@ -198,14 +225,21 @@
                   </div>
                 </div>
 
-                <div class="field-box">
-
-                  <div class="field-promo">
-                    <a href="#">Промокод</a>
+                <div class="field-promo">
+                  <label class="field-text field-promo__text">
+                    <span class="field-text__name">Введите промокод:</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+                    </span>
+                  </label>
+                  <div class="field-actions field-promo__actions">
+                    <button class="btn">Применить</button>
                   </div>
+                </div>
 
+                <div class="field-box">
                   <div class="field-actions">
-                    <div class="field-actions__text">Итого: 135 300 Р</div>
+                    <div class="field-actions__text">Итого: <b>135 300 Р</b></div>
                     <button class="btn btn--block">Оформить заказ</button>
                   </div>
 
